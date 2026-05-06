@@ -7,6 +7,16 @@ public class Vanara_Brothers : ModuleRules
 	public Vanara_Brothers(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+		
+		PublicIncludePaths.AddRange(new string[] { 
+			"Vanara_Brothers/Character",
+			"Vanara_Brothers/Components",
+			// "Vanara_Brothers/Interfaces",
+			// "Vanara_Brothers/Enemies",
+			// "Vanara_Brothers/Weapons",
+			// "Vanara_Brothers/Quest",
+			// "Vanara_Brothers/Core"
+		});
 	
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
 
